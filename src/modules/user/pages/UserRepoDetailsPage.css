@@ -1,0 +1,25 @@
+.user-repo-details-page-wrapper > h2  {
+    margin : 40px 0 20px;
+}
+
+.user-repo-details-page-content {
+    padding: 25px 50px;
+    border-radius: 8px;
+    list-style: circle;
+    background: var(--color-grey-warm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.user-repo-details-page-content > li {
+    margin: 10px 0;
+}
+
+.user-repo-details-header  {
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.user-repo-details-header > h2 {
+    color: var(--color-midnight);
+}

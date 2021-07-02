@@ -1,0 +1,36 @@
+.custom-button {
+    padding: 2px 16px;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 4px;
+    border: 1px solid ;
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.custom-button[disabled] {
+    pointer-events: none;
+    color: var(--color-ghost-white);
+    background-color: var(--color-grey-disabled);
+    border: 1px solid var(--color-grey-disabled);
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.custom-button--primary {
+    background: var(--color-purple-heart);
+    border: 1px solid var(--color-purple-heart);
+    color: var(--color-white);
+}
+
+.custom-button--secondary {
+    border: 1px solid var(--color-purple-heart);
+    color: var(--color-purple-heart);
+    background: var(--color-white);
+}

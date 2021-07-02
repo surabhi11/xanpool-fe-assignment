@@ -1,0 +1,20 @@
+:root {
+    /* xanpool website theme colors */
+    --color-white: #ffffff;
+    --color-ghost-white: #f6f6fa;
+    --color-grey-light: #e6e6e6;
+    --color-grey-dark: #3c3a3a;
+    --color-grey-disabled: #e6e6e6;
+    --color-red-light: #ff6666;
+    --color-midnight-blue: #152081;
+    --color-royal-blue: #347fe0;
+    --color-midnight: #48494b;
+    --color-grey-warm: #F0F0F0;
+    --color-purple-heart: #6931d4;
+    --color-blue-pale: #6f65e9;
+
+    --color-main-gradient: linear-gradient(273deg, var(--color-royal-blue), var(--color-blue-pale) 49%, var(--color-purple-heart));
+
+    /* font variable */
+    --font-family-default: 'Ubuntu', sans-serif;
+}
