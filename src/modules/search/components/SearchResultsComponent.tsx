@@ -32,7 +32,7 @@ export default function SearchResultsComponent({ ...props }) {
     }
 
     return (
-        <div>
+        <div className="search-results-view">
             <div className="search-results-wrapper">
                 <div className="search-results-display">
                     {isLoading ?

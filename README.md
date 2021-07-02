@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Xanpool FE Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The web app has a landing page i.e Search Page where we can search for **github** users with their usernames. The results will be displayed below in cards with user profile details.
+By click on the user details card, we will be redirected to user's repository list page with cards displaying repo details like repo name, created date etc.
+By click on the repo details card, we will be redirected to repo details page which has all the files in the repo listed as well as the ReadMe file content rendered.
 
-## Available Scripts
+## Folder Structure
 
-In the project directory, you can run:
+    - src/modules (containes module specific code like user, repo)
+	    - src/modules/common (contains common reusable components like textfield, button, cards)
+	    - src/modules/search (contains search related components, pages)
+	    - src/modules/user
+	    - src/modules/repo
 
-### `yarn start`
+    - src/api (module specific api's with all methods)
+	    - src/api/UsersApi
+	    - src/api/ReposApi
+    - src/assets
+	    - src/assets/css (has common style variables for colors)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - The user and repo fields that are displayed in card are fully customisable with type support.
+	 - `Supported types - text | number | boolean | link | data`
+Based on the type of the field using a metadata for the field, the value is rendered in the card for example link is clickable and redirects to appropriate link.
+- Reusable custom components like `Button, TextField, CardView`.
+-  Loading state for all pages waiting on results.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Commands
+For running the application locally
 
-### `yarn build`
+    - git clone git@github.com:surabhi11/xanpool-fe-assignment.git
+    - cd xanpool-fe-assignment/
+    - npm i
+    - npm run start
+    - Go to http://localhost:3000/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future Scope
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - Extending metadata fields to support new and nested types.
+ - Retaining search text on page refresh by adding as query param or state variable.
+ - e2e test cases for each flow.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### PS for typescript error update the IDE version to 4.3.4
